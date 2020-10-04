@@ -1,26 +1,16 @@
-# Quasar App (stryker)
+# Stryker
+Stryker is an advanced foosball system that brings analytics real-time monitoring to any foosball table. It uses OpenCV for the ball tracking and Vue/Quasar for the game control web app.
 
-A Quasar Framework app
+To run the web app (built with Vue and Quasar) locally:
 
-## Install the dependencies
 ```bash
 npm install
-```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
 quasar dev
 ```
 
-### Lint the files
+To run the computer vision Python script (afer installing all dependencies): 
 ```bash
-npm run lint
+python3 stryker.py
 ```
 
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+**Note:** The Python script requires a secondary webcam to be plugged into the computer.
